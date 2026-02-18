@@ -1,0 +1,50 @@
+baseURL: "https://marioclr.com/"
+languageCode: "es-mx"
+title: "Mario CLR"
+theme: "PaperMod"
+
+params:
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+
+  profileMode:
+    enabled: true
+    title: "Mario César Lima Rodríguez"
+    subtitle: "Arquitecto de Soluciones | Sistemas Financieros | Arquitectura Empresarial"
+    imageUrl: "home/mclr-pic-small.jpg"
+    imageWidth: 220
+    imageHeight: 220
+    imageTitle: "Mario CLR"
+
+    buttons:
+      - name: Experiencia
+        url: "/experiencia/"
+      - name: Proyectos
+        url: "/projects/"
+      - name: Blog
+        url: "/blog/"
+      - name: CV
+        url: "home/MCLR-Short Resume-ES.pdf"
+        newTab: true
+
+menu:
+  main:
+    - identifier: experiencia
+      name: Experiencia
+      url: /experiencia/
+      weight: 1
+
+    - identifier: projects
+      name: Proyectos
+      url: /projects/
+      weight: 2
+
+    - identifier: blog
+      name: Blog
+      url: /blog/
+      weight: 3
