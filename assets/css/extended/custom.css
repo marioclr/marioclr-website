@@ -1,0 +1,57 @@
+/* Fondo cálido sutil */
+body,
+.list {
+    background: #f0ede9;
+}
+
+:root {
+    --theme: #e6d9c9;     /* Fondo general */
+    --entry: #f3ebe2;     /* Fondo de tarjetas */
+    --primary: #1f1f1f;   /* Texto principal */
+    --secondary: #555;    /* Texto secundario */
+    --tertiary: #d6cbbf;  /* Bordes sutiles */
+}
+
+/* Contenedor principal más aireado */
+.main {
+    max-width: 820px;
+}
+
+.main,
+.post-entry,
+.profile {
+    border-radius: 16px;
+}
+
+.post-entry {
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+/* Más espacio vertical en la landing */
+.profile {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* Títulos más elegantes */
+h1, h2, h3 {
+    letter-spacing: -0.5px;
+}
+
+/* Subtítulo más ligero */
+.profile .profile_inner p {
+    font-size: 1.05rem;
+    color: #555;
+}
+
+/* Botones más suaves */
+.button {
+    border-radius: 8px;
+    padding: 8px 18px;
+    font-weight: 500;
+}
+
+.button:hover {
+    transform: translateY(-2px);
+    transition: all 0.2s ease-in-out;
+}
