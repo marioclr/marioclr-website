@@ -15,7 +15,7 @@ params:
   profileMode:
     enabled: true
     title: "Mario César Lima Rodríguez"
-    subtitle: "Arquitecto de Soluciones | Sistemas Financieros | Arquitectura Empresarial"
+    subtitle: "Arquitecto de soluciones senior con visión estratégica de negocio, diseño de sistemas escalables y evolución de la gestión tecnológica."
     imageUrl: "home/mclr-pic-small.jpg"
     imageWidth: 220
     imageHeight: 220
