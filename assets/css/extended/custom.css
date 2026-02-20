@@ -180,3 +180,57 @@ body {
         transform: translateY(0);
     }
 }
+
+/* ============================= */
+/* 🔹 ABOUT SECTION (2 columnas) */
+/* ============================= */
+
+.about-section {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
+
+.about-image img {
+    width: 380px;
+    border-radius: 6px;
+}
+
+.about-content {
+    max-width: 520px;
+}
+
+.about-content ul {
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+
+.about-section {
+    margin-top: 5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+    }
+}
+
+.about-intro {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.about-list li {
+    margin-bottom: 0.6rem;
+}
