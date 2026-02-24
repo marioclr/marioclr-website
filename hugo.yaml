@@ -17,6 +17,7 @@ params:
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
   mainSections: []
+  description: "Arquitecto de Software especializado en diseño de sistemas escalables y decisiones técnicas estratégicas."
 
 menu:
   main:

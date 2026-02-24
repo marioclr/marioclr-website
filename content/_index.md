@@ -1,22 +1,32 @@
 ---
-title: "Home"
+title: "Mario CLR"
+description: "Arquitecto de Software especializado en diseño de sistemas escalables y decisiones técnicas estratégicas."
+images:
+  - /images/og-cover.jpg
 ---
 
-# Mario César Lima Rodríguez
+<header class="hero-section">
 
-Arquitecto de Software  
+<h1>Mario César Lima Rodríguez</h1>
 
+<p class="hero-role"><strong>Arquitecto de Software</strong></p>
+
+<p class="hero-description">
 Diseño arquitecturas de software que sostienen decisiones de negocio críticas.
+</p>
 
----
+</header>
 
 ## Sobre mí
 
 <div class="about-section">
 
-  <div class="about-image">
-    <img src="/images/mario-profile.jpg" alt="Mario César Lima Rodríguez" />
-  </div>
+  <figure class="about-image">
+    <img 
+      src="/images/mario-profile.jpg" 
+      alt="Retrato profesional de Mario César Lima Rodríguez" 
+    />
+  </figure>
 
   <div class="about-content">
 
@@ -24,7 +34,9 @@ Diseño arquitecturas de software que sostienen decisiones de negocio críticas.
     Arquitecto de software enfocado en diseñar sistemas escalables que soportan decisiones de negocio críticas.
   </p>
 
-  Me especializo en construir sistemas sólidos que no solo funcionan, sino que escalan, se mantienen y generan valor sostenible. Combino una base técnica rigurosa con visión estratégica, entendiendo que cada decisión arquitectónica impacta directamente en los resultados del producto.
+  <p>
+    Me especializo en construir sistemas sólidos que no solo funcionan, sino que escalan, se mantienen y generan valor sostenible. Combino una base técnica rigurosa con visión estratégica, entendiendo que cada decisión arquitectónica impacta directamente en los resultados del producto.
+  </p>
 
   <ul class="about-list">
     <li><strong>Arquitectura pragmática:</strong> escalabilidad, resiliencia y mantenibilidad.</li>
