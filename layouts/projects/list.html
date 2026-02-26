@@ -1,0 +1,73 @@
+{{ define "main" }}
+<main class="main">
+  <header class="page-header">
+    <h1>{{ .Title }}</h1>
+    {{ with .Content }}
+      <div class="post-description">
+        {{ . }}
+      </div>
+    {{ end }}
+  </header>
+
+  {{ $pages := sort .Pages "Weight" }}
+
+  <!-- Featured Project -->
+  {{ range $pages }}
+    {{ if .Params.featured }}
+      <div class="portfolio-featured">
+        <article class="portfolio-card featured-card">
+          <h2 class="portfolio-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+
+          <div class="portfolio-meta">
+            {{ with .Params.organization }}
+              <span class="portfolio-organization">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.role }}
+              <span class="portfolio-role"> · {{ . }}</span>
+            {{ end }}
+            {{ with .Params.period }}
+              <div class="portfolio-period">{{ . }}</div>
+            {{ end }}
+          </div>
+
+          {{ with .Params.summary }}
+            <p class="portfolio-summary">{{ . }}</p>
+          {{ end }}
+        </article>
+      </div>
+    {{ end }}
+  {{ end }}
+
+  <!-- Grid Projects -->
+  <div class="portfolio-grid">
+    {{ range $pages }}
+      {{ if not .Params.featured }}
+        <article class="portfolio-card">
+          <h2 class="portfolio-title">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          </h2>
+
+          <div class="portfolio-meta">
+            {{ with .Params.organization }}
+              <span class="portfolio-organization">{{ . }}</span>
+            {{ end }}
+            {{ with .Params.role }}
+              <span class="portfolio-role"> · {{ . }}</span>
+            {{ end }}
+            {{ with .Params.period }}
+              <div class="portfolio-period">{{ . }}</div>
+            {{ end }}
+          </div>
+
+          {{ with .Params.summary }}
+            <p class="portfolio-summary">{{ . }}</p>
+          {{ end }}
+        </article>
+      {{ end }}
+    {{ end }}
+  </div>
+
+</main>
+{{ end }}
