@@ -136,3 +136,104 @@ html[data-theme="dark"] .portfolio-card:hover {
 html[data-theme="dark"] .featured-card {
   background: var(--portfolio-bg-dark-featured);
 }
+
+/* ===================================================== */
+/* ⭐ FEATURED BADGE */
+/* ===================================================== */
+
+.featured-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.featured-badge::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-top: 0.6rem;
+  background: linear-gradient(90deg, #7aa2ff, transparent);
+}
+
+/* ===================================================== */
+/* 🔥 FEATURED CARD BASE */
+/* ===================================================== */
+
+.featured-card {
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+/* Micro glow + elevación */
+.featured-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Glow sutil en dark */
+html[data-theme="dark"] .featured-card:hover {
+  box-shadow:
+    0 18px 55px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(122, 162, 255, 0.15);
+}
+
+/* Glow sutil en light */
+html:not([data-theme="dark"]) .featured-card:hover {
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12),
+    0 0 20px rgba(122, 162, 255, 0.08);
+}
+
+/* ===================================================== */
+/* 💎 FEATURED HIGHLIGHT BLOQUE */
+/* ===================================================== */
+
+.featured-highlight {
+  margin-top: 1.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+/* Light mode */
+html:not([data-theme="dark"]) .featured-highlight {
+  background: rgba(122, 162, 255, 0.08);
+  color: #2c3e75;
+  border: 1px solid rgba(122, 162, 255, 0.2);
+}
+
+/* Dark mode */
+html[data-theme="dark"] .featured-highlight {
+  background: rgba(122, 162, 255, 0.08);
+  color: #d8e2ff;
+  border: 1px solid rgba(122, 162, 255, 0.25);
+}
+
+/* ===================================================== */
+/* ✨ BADGE INTERACCIÓN SUTIL */
+/* ===================================================== */
+
+.featured-badge {
+  transition: color 0.3s ease;
+}
+
+.featured-badge::after {
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+/* Hover sobre la card afecta el badge */
+.featured-card:hover .featured-badge {
+  color: #7aa2ff;
+}
+
+.featured-card:hover .featured-badge::after {
+  width: 100px;
+  background: linear-gradient(90deg, #7aa2ff, rgba(122, 162, 255, 0.3));
+}

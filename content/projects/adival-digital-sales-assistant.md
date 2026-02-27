@@ -10,7 +10,7 @@ weight: 10
 organization: "Alpura"
 role: "Analista Programador"
 period: "2005–2010"
-featured: true
+featured: false
 ---
 ## Executive Summary
 
