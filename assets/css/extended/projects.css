@@ -1,0 +1,239 @@
+/* ===================================================== */
+/* 🎨 VARIABLES */
+/* ===================================================== */
+
+:root {
+  --portfolio-bg-light: #e6ded6;
+  --portfolio-bg-dark: #1c2333;
+  --portfolio-bg-dark-hover: #20283a;
+  --portfolio-bg-dark-featured: linear-gradient(145deg, #202a40, #1a2233);
+  --portfolio-border-dark: rgba(255, 255, 255, 0.05);
+}
+
+/* ===================================================== */
+/* 📁 GRID LAYOUT */
+/* ===================================================== */
+
+.portfolio-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+/* 2 columnas en desktop */
+@media (min-width: 768px) {
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+/* ===================================================== */
+/* 🧱 CARD BASE */
+/* ===================================================== */
+
+.portfolio-card {
+  padding: 1.75rem;
+  border-radius: 14px;
+  background: var(--portfolio-bg-light);
+  transition: all 0.25s ease-in-out;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hover general */
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* ===================================================== */
+/* 📝 CONTENIDO CARD */
+/* ===================================================== */
+
+.portfolio-title {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-title a {
+  text-decoration: none;
+}
+
+.portfolio-meta {
+  font-size: 0.9rem;
+  opacity: 0.8;
+  margin-bottom: 1rem;
+}
+
+.portfolio-organization {
+  font-weight: 600;
+}
+
+.portfolio-period {
+  margin-top: 0.25rem;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
+
+.portfolio-summary {
+  margin-top: auto;
+  line-height: 1.6;
+}
+
+/* ===================================================== */
+/* ⭐ FEATURED PROJECT */
+/* ===================================================== */
+
+.portfolio-featured {
+  margin-bottom: 2.5rem;
+}
+
+.featured-card {
+  padding: 2.5rem;
+  font-size: 1.05rem;
+}
+
+.featured-card .portfolio-title {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .featured-card {
+    padding: 3rem;
+  }
+}
+
+/* ===================================================== */
+/* 🌙 DARK MODE */
+/* ===================================================== */
+
+html[data-theme="dark"] .portfolio-card {
+  background: linear-gradient(145deg, var(--portfolio-bg-dark), #182030);
+  color: #e6e6e6;
+  border: 1px solid var(--portfolio-border-dark);
+}
+
+html[data-theme="dark"] .portfolio-title a {
+  color: #ffffff;
+}
+
+html[data-theme="dark"] .portfolio-meta {
+  color: #bfc7d5;
+}
+
+html[data-theme="dark"] .portfolio-summary {
+  color: #d8dee9;
+}
+
+html[data-theme="dark"] .portfolio-card:hover {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: var(--portfolio-bg-dark-hover);
+}
+
+html[data-theme="dark"] .featured-card {
+  background: var(--portfolio-bg-dark-featured);
+}
+
+/* ===================================================== */
+/* ⭐ FEATURED BADGE */
+/* ===================================================== */
+
+.featured-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.featured-badge::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-top: 0.6rem;
+  background: linear-gradient(90deg, #7aa2ff, transparent);
+}
+
+/* ===================================================== */
+/* 🔥 FEATURED CARD BASE */
+/* ===================================================== */
+
+.featured-card {
+  position: relative;
+  transition: all 0.35s ease;
+}
+
+/* Micro glow + elevación */
+.featured-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Glow sutil en dark */
+html[data-theme="dark"] .featured-card:hover {
+  box-shadow:
+    0 18px 55px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(122, 162, 255, 0.15);
+}
+
+/* Glow sutil en light */
+html:not([data-theme="dark"]) .featured-card:hover {
+  box-shadow:
+    0 15px 40px rgba(0, 0, 0, 0.12),
+    0 0 20px rgba(122, 162, 255, 0.08);
+}
+
+/* ===================================================== */
+/* 💎 FEATURED HIGHLIGHT BLOQUE */
+/* ===================================================== */
+
+.featured-highlight {
+  margin-top: 1.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+
+/* Light mode */
+html:not([data-theme="dark"]) .featured-highlight {
+  background: rgba(122, 162, 255, 0.08);
+  color: #2c3e75;
+  border: 1px solid rgba(122, 162, 255, 0.2);
+}
+
+/* Dark mode */
+html[data-theme="dark"] .featured-highlight {
+  background: rgba(122, 162, 255, 0.08);
+  color: #d8e2ff;
+  border: 1px solid rgba(122, 162, 255, 0.25);
+}
+
+/* ===================================================== */
+/* ✨ BADGE INTERACCIÓN SUTIL */
+/* ===================================================== */
+
+.featured-badge {
+  transition: color 0.3s ease;
+}
+
+.featured-badge::after {
+  transition: width 0.3s ease, background 0.3s ease;
+}
+
+/* Hover sobre la card afecta el badge */
+.featured-card:hover .featured-badge {
+  color: #7aa2ff;
+}
+
+.featured-card:hover .featured-badge::after {
+  width: 100px;
+  background: linear-gradient(90deg, #7aa2ff, rgba(122, 162, 255, 0.3));
+}
