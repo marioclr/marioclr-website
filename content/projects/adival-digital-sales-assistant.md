@@ -1,7 +1,7 @@
 ---
 title: "Digital Sales Assistant (ADIVAL)"
-date: 2008-01-01
-lastmod: 2010-08-01
+date: 2009-01-01
+lastmod: 2009-08-01
 draft: false
 summary: "Solución móvil empresarial para digitalizar la fuerza de ventas con despliegue nacional."
 tags: ["Mobile Enterprise", "Arquitectura", "Offline Sync", "Integración Legacy"]
@@ -9,7 +9,7 @@ categories: ["Projects"]
 weight: 10
 organization: "Alpura"
 role: "Analista Programador"
-period: "2005–2010"
+period: "2005–2009"
 featured: false
 ---
 ## Executive Summary

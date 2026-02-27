@@ -3,6 +3,7 @@ title: "SICTAFI Mobile"
 date: 2014-01-01
 summary: "Aplicación móvil Android para inventario y geolocalización de bienes públicos con sincronización segura hacia sistema central en ASP.NET."
 organization: "Jibda & Asociados"
+role: "Lider técnico - Web & Mobile"
 period: "2016–2017"
 tags: ["Android", "Java", "ASP.NET", "SQL Server", "Arquitectura Distribuida"]
 featured: false
