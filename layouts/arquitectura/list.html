@@ -1,0 +1,25 @@
+{{ define "main" }}
+
+<header class="page-header">
+  <h1>{{ .Title }}</h1>
+  {{ with .Params.description }}
+    <div class="post-description">
+      {{ . }}
+    </div>
+  {{ end }}
+</header>
+
+{{ $pages := where .Site.RegularPages "Section" "arquitectura" }}
+
+{{ range $pages.ByDate.Reverse }}
+  <article class="architecture-entry">
+    <a href="{{ .RelPermalink }}" class="architecture-link">
+      <h2>{{ .Title }}</h2>
+      {{ with .Params.summary }}
+        <p class="architecture-summary">{{ . }}</p>
+      {{ end }}
+    </a>
+  </article>
+{{ end }}
+
+{{ end }}
