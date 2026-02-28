@@ -1,10 +1,10 @@
 ---
 date: '2026-02-18T14:29:02-06:00'
 draft: false
-title: 'Arquitectura Transferencias'
+title: 'App para Transferencias bancarias'
 organization: "Proyecto conceptual"
 role: "Arquitecto de Software"
-period: "2026"
+period: "2026 – Actualidad"
 summary: "Diseño arquitectónico de plataforma de transferencias bancarias basada en API Spring y Frontend Angular, con integración a core bancario mediante servicios de terceros."
 tags: ["Spring Boot", "Angular", "Arquitectura de Software", "APIs", "Integración Financiera"]
 featured: false

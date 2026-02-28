@@ -1,7 +1,7 @@
 ---
 title: "Sistema Integral de Guardias y Suplencias (SIGYS)"
-date: 2024-01-01
-period: "2023 – Actualidad"
+date: 2025-01-01
+period: "2025 – Actualidad"
 role: "Arquitecto de Solución y Líder del Proyecto"
 industry: "Sector Público – Salud"
 organization: "ISSSTE"

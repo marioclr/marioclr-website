@@ -2,6 +2,10 @@
 title: "Atención a la pandemia por COVID-19 en el ISSSTE"
 date: 2020-01-01
 summary: "Adecuaciones críticas al sistema SIAPISSSTE para habilitar contratación, cálculo y fiscalización del Personal COVID durante la emergencia sanitaria."
+period: "2020 – 2021"
+role: "Jefe de Departamento"
+industry: "Sector Público – Salud"
+organization: "ISSSTE"
 tags: ["Sistema Legacy", "Nómina", "Sector Público", "Gestión de Datos", "Auditoría"]
 featured: false
 ---
