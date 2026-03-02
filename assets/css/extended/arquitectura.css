@@ -1,0 +1,66 @@
+/* ============================= */
+/* 🏛 Arquitectura – Identidad Editorial */
+/* ============================= */
+
+.architecture-entry {
+  padding: 2rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+}
+
+.architecture-entry:last-child {
+  border-bottom: none;
+}
+
+.architecture-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.architecture-entry h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.6rem 0;
+  letter-spacing: -0.3px;
+}
+
+.architecture-entry:hover h2 {
+  opacity: 0.7;
+}
+
+.architecture-summary {
+  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.75;
+}
+
+/* Divider elegante para artículos */
+
+.architecture-divider {
+  width: 120px;              /* más larga */
+  height: 4px;
+  background: linear-gradient(to right, #222, rgba(0,0,0,0.2));
+  margin: 1.4rem 0 2.2rem 0; /* un poco más de aire */
+}
+
+/* Light mode */
+[data-theme="light"] .architecture-divider {
+  background: linear-gradient(to right, #222, rgba(0,0,0,0.15));
+}
+
+/* Dark mode */
+[data-theme="dark"] .architecture-divider {
+  background: linear-gradient(to right, #ffffff, rgba(255,255,255,0.35));
+}
+
+.post-single h1 {
+  font-size: 2.2rem;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.post-content h2 {
+  margin-top: 2.5rem;
+}

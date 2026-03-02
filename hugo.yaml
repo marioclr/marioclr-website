@@ -16,7 +16,8 @@ params:
   ShowPostNavLinks: true
   ShowBreadCrumbs: true
   ShowCodeCopyButtons: true
-  mainSections: []
+  mainSections:
+    - arquitectura
   description: "Arquitecto de Software especializado en diseño de sistemas escalables y decisiones técnicas estratégicas."
 
 menu:
@@ -31,7 +32,7 @@ menu:
       url: /projects/
       weight: 2
 
-    - identifier: blog
-      name: Blog
-      url: /blog/
+    - identifier: arquitectura
+      name: Arquitectura
+      url: /arquitectura/
       weight: 3
