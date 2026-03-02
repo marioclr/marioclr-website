@@ -1,10 +1,10 @@
 ---
-date: '2026-02-27'
+date: 2025-03-02
 draft: false
 title: 'La arquitectura como decisión estratégica, no como elección tecnológica'
 summary: "La arquitectura de software no se trata de frameworks o lenguajes. Se trata de decisiones que impactan sostenibilidad, riesgo y dirección de negocio."
-type: arquitectura
 layout: single
+weight: 1
 tags: ["Arquitectura", "Estrategia", "Decisiones Técnicas"]
 ---
 ## La confusión común
