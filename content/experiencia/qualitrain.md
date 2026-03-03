@@ -1,6 +1,6 @@
 ---
 title: "Qualitrain Express – Consultor en Análisis y Desarrollo de Sistemas"
-summary: "Inicio profesional en consultoría tecnológica, análisis de sistemas y formación especializada en diseño orientado a objetos."
+summary: "Fundamentos en análisis formal de sistemas, modelado UML y documentación técnica en entornos regulados."
 date: 2005-11-01
 draft: false
 ---
@@ -51,3 +51,8 @@ Esta etapa consolidó fundamentos sólidos en análisis formal, modelado de sist
 La experiencia en consultoría y capacitación permitió desarrollar visión sistémica, disciplina metodológica y habilidades de comunicación técnica, que posteriormente serían esenciales en roles de mayor responsabilidad.
 
 Fue el punto donde comenzó a construirse la base conceptual de mi trayectoria profesional.
+
+---
+
+**Proyecto representativo:**
+- Sistema de Logística para Recolección en Alpura

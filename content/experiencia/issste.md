@@ -1,6 +1,6 @@
 ---
-title: "ISSSTE – Jefe de Departamento de Diseño de Sistemas"
-summary: "Liderazgo técnico en sistemas institucionales críticos y modernización progresiva en entorno regulado."
+title: "ISSSTE – Jefe de Diseño de Sistemas"
+summary: "Arquitectura y evolución de sistemas institucionales críticos que sostienen procesos administrativos y financieros de alcance nacional."
 date: 2026-03-02
 draft: false
 ---
@@ -73,3 +73,9 @@ La arquitectura institucional no se trata únicamente de diseño técnico.
 Implica gestionar riesgo, equilibrar estabilidad y modernización, y tomar decisiones que protejan procesos sensibles mientras se habilita evolución tecnológica.
 
 El liderazgo técnico en entornos regulados exige comprender tanto el sistema como la organización que lo sostiene.
+
+---
+
+**Proyectos destacados en esta etapa:**
+- Sistema Integral de Guardias y Suplencias (SIGYS)
+- Atención a la pandemia por COVID-19

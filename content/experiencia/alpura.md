@@ -1,6 +1,6 @@
 ---
 title: "Alpura – Analista Programador"
-summary: "Análisis de requerimientos, desarrollo de soluciones empresariales y liderazgo temprano en proyectos de transformación interna."
+summary: "Análisis sistémico y desarrollo de soluciones empresariales alineadas a procesos operativos complejos."
 date: 2010-08-15
 draft: false
 ---
@@ -52,3 +52,8 @@ Esta etapa marcó la transición de ejecución técnica a comprensión sistémic
 El proyecto ADIVAL consolidó habilidades tanto técnicas como humanas, fortaleciendo capacidades de análisis, comunicación con áreas operativas y liderazgo temprano de iniciativas tecnológicas.
 
 Fue el punto donde la tecnología dejó de ser solo código y comenzó a convertirse en herramienta de transformación organizacional.
+
+---
+
+**Proyecto representativo:**
+- Digital Sales Assistant (ADIVAL)

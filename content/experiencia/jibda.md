@@ -1,6 +1,6 @@
 ---
 title: "JIBDA & Asociados – Líder de Desarrollo Móvil y Web"
-summary: "Liderazgo técnico en desarrollo empresarial, optimización de bases de datos y diseño de soluciones móviles en entornos corporativos."
+summary: "Diseño y optimización de soluciones empresariales, con enfoque en arquitectura de datos y sistemas móviles de alto desempeño."
 date: 2017-01-15
 draft: false
 ---
@@ -53,3 +53,8 @@ Esta etapa consolidó fundamentos técnicos en bases de datos empresariales de g
 También marcó la transición hacia liderazgo técnico, integrando habilidades de coordinación de equipo, toma de decisiones de diseño y equilibrio entre calidad técnica y necesidades comerciales.
 
 Fue el punto donde la ejecución técnica comenzó a convertirse en responsabilidad estructural.
+
+---
+
+**Proyecto representativo:**
+- SICTAFI Mobile
