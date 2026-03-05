@@ -1,5 +1,6 @@
 ---
 title: "Sistema Integral de Guardias y Suplencias (SIGYS)"
+subtitle: "Modernización tecnológica nacional para gestión institucional de guardias y suplencias médicas"
 date: 2025-01-01
 period: "2025 – Actualidad"
 role: "Arquitecto de Solución y Líder del Proyecto"

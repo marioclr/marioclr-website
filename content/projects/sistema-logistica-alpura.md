@@ -1,5 +1,6 @@
 ---
 title: "Sistema de Logística para Recolección en Alpura"
+subtitle: "Diseño metodológico de sistema nacional para planeación y optimización de rutas de recolección de leche"
 date: 2008-01-01
 summary: "Participación en el diseño y dirección metodológica del sistema nacional de planeación y ejecución de rutas de recolección de leche bajo marco RUP."
 organization: "Qualitrain Express"
