@@ -1,5 +1,5 @@
 ---
-title: "Digital Sales Assistant (ADIVAL)"
+title: "Asistente Digital de Ventas (ADIVAL)"
 subtitle: "Plataforma móvil empresarial para digitalizar la fuerza de ventas con sincronización offline a sistemas corporativos"
 date: 2009-01-01
 lastmod: 2009-08-01
@@ -12,6 +12,8 @@ organization: "Alpura"
 role: "Analista Programador"
 period: "2005–2009"
 featured: false
+images:
+  - /images/og/projects/og-adival.jpg
 ---
 ## Executive Summary
 

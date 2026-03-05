@@ -9,6 +9,8 @@ period: "2026 – Actualidad"
 summary: "Diseño arquitectónico de plataforma de transferencias bancarias basada en API Spring y Frontend Angular, con integración a core bancario mediante servicios de terceros."
 tags: ["Spring Boot", "Angular", "Arquitectura de Software", "APIs", "Integración Financiera"]
 featured: false
+images:
+  - /images/og/projects/og-transferencias.jpg
 ---
 
 ## Executive Summary

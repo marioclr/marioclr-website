@@ -9,6 +9,8 @@ industry: "Sector Público – Salud"
 organization: "ISSSTE"
 tags: ["Sistema Legacy", "Nómina", "Sector Público", "Gestión de Datos", "Auditoría"]
 featured: false
+images:
+  - /images/og/projects/og-covid.jpg
 ---
 
 ## Executive Summary

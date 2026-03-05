@@ -9,6 +9,8 @@ period: "2005–2009"
 weight: 20
 tags: ["RUP", "Análisis y Diseño OO", "Logística", "Consultoría", "Modelado UML"]
 featured: false
+images:
+  - /images/og/projects/og-logistica.jpg
 ---
 
 ## Executive Summary

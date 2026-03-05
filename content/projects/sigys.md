@@ -14,6 +14,8 @@ description: "Modernización tecnológica nacional para sustituir sistema legacy
 impact: "Modernización de sistema nacional crítico con controles de seguridad y validación normativa integrados."
 technologies: ["Spring Framework", "Angular", "REST API", "Informix", "Unix Servers"]
 tags: ["Arquitectura Empresarial", "Modernización Legacy", "Sector Público", "Gestión Nacional", "Spring", "Angular"]
+images:
+  - /images/og/projects/og-sigys.jpg
 ---
 
 ## Executive Summary

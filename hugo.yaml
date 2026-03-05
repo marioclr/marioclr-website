@@ -42,15 +42,3 @@ menu:
       name: "CV"
       url: "/cv-mario-clr.pdf"
       weight: 5
-
-outputFormats:
-  OG:
-    mediaType: image/svg+xml
-    baseName: index.og
-    isPlainText: true
-    notAlternative: true
-
-outputs:
-  page:
-    - HTML
-    - OG
