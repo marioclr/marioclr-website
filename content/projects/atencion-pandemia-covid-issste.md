@@ -1,5 +1,6 @@
 ---
 title: "Atención a la pandemia por COVID-19 en el ISSSTE"
+subtitle: "Adecuaciones críticas a sistema institucional de nómina para habilitar contratación extraordinaria durante la emergencia sanitaria"
 date: 2020-01-01
 summary: "Adecuaciones críticas al sistema SIAPISSSTE para habilitar contratación, cálculo y fiscalización del Personal COVID durante la emergencia sanitaria."
 period: "2020 – 2021"

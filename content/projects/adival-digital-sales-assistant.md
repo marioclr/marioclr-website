@@ -1,5 +1,6 @@
 ---
 title: "Digital Sales Assistant (ADIVAL)"
+subtitle: "Plataforma móvil empresarial para digitalizar la fuerza de ventas con sincronización offline a sistemas corporativos"
 date: 2009-01-01
 lastmod: 2009-08-01
 draft: false

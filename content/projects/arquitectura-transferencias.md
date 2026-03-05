@@ -2,6 +2,7 @@
 date: '2026-02-18T14:29:02-06:00'
 draft: false
 title: 'App para Transferencias bancarias'
+subtitle: "Diseño arquitectónico de plataforma financiera basada en APIs para operaciones de transferencias digitales"
 organization: "Proyecto conceptual"
 role: "Arquitecto de Software"
 period: "2026 – Actualidad"
