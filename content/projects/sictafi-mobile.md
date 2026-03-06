@@ -8,6 +8,8 @@ role: "Lider técnico - Web & Mobile"
 period: "2016–2017"
 tags: ["Android", "Java", "ASP.NET", "SQL Server", "Arquitectura Distribuida"]
 featured: false
+images:
+  - /images/og/projects/og-sictafi.jpg
 ---
 
 ## Executive Summary

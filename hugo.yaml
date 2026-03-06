@@ -19,6 +19,7 @@ params:
   hideMeta: true
   mainSections:
     - arquitectura
+  author: "Mario César Lima Rodríguez"
   description: "Arquitecto de Software especializado en diseño de sistemas escalables y decisiones técnicas estratégicas."
 
 menu:
@@ -42,15 +43,3 @@ menu:
       name: "CV"
       url: "/cv-mario-clr.pdf"
       weight: 5
-
-outputFormats:
-  OG:
-    mediaType: image/svg+xml
-    baseName: index.og
-    isPlainText: true
-    notAlternative: true
-
-outputs:
-  page:
-    - HTML
-    - OG

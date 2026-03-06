@@ -1,10 +1,24 @@
 ---
-title: "Arquitectura bajo presión: cómo intervenir un sistema legacy sin comprometer la operación crítica"
-summary: "Intervenir sistemas legacy en entornos institucionales no es modernizar tecnología. Es gestionar riesgo sin interrumpir lo que sostiene a la organización."
 date: 2023-03-02
-weight: 3
-tags: ["arquitectura", "legacy", "sistemas críticos", "gestión de riesgo"]
 draft: false
+
+title: "Arquitectura bajo presión: cómo intervenir un sistema legacy sin comprometer la operación crítica"
+
+description: "Intervenir sistemas legacy en entornos institucionales exige decisiones arquitectónicas cuidadosas. No se trata de modernizar por estética tecnológica, sino de gestionar riesgo mientras se protege la operación crítica."
+
+summary: "Intervenir sistemas legacy en entornos institucionales no es modernizar tecnología. Es gestionar riesgo sin interrumpir lo que sostiene a la organización."
+
+weight: 3
+
+images:
+  - /images/og/arquitectura/og-intervenir-un-sistema-legacy.jpg
+
+tags:
+  - arquitectura de software
+  - sistemas legacy
+  - sistemas críticos
+  - gestión de riesgo
+
 ---
 
 Los sistemas legacy suelen ser descritos como obsoletos, rígidos o problemáticos.

@@ -1,10 +1,24 @@
 ---
-title: "Arquitectura incremental vs reescritura total: decidir sin romanticismo técnico"
-summary: "Reescribir desde cero puede parecer atractivo. Pero en sistemas reales, la decisión correcta rara vez es la más espectacular."
 date: 2022-03-02
-weight: 4
-tags: ["arquitectura", "legacy", "decisiones técnicas", "gestión de riesgo"]
 draft: false
+
+title: "Arquitectura incremental vs reescritura total: decidir sin romanticismo técnico"
+
+description: "Reescribir un sistema desde cero puede parecer una solución elegante. Pero en entornos reales, las decisiones arquitectónicas responsables suelen favorecer evolución incremental sobre cambios espectaculares."
+
+summary: "Reescribir desde cero puede parecer atractivo. Pero en sistemas reales, la decisión correcta rara vez es la más espectacular."
+
+weight: 4
+
+images:
+  - /images/og/arquitectura/og-arquitectura-incremental.jpg
+
+tags:
+  - arquitectura de software
+  - sistemas legacy
+  - modernización de sistemas
+  - decisiones arquitectónicas
+
 ---
 
 En algún punto, todo sistema enfrenta la misma conversación:
