@@ -1,10 +1,24 @@
 ---
-title: "Arquitectura y toma de decisiones bajo incertidumbre"
-summary: "La arquitectura no se diseña con información perfecta. Se diseña tomando decisiones responsables cuando el contexto aún es incompleto."
 date: 2024-03-02
-weight: 2
-tags: ["arquitectura", "liderazgo técnico", "estrategia", "dirección tecnológica"]
 draft: false
+
+title: "Arquitectura y toma de decisiones bajo incertidumbre"
+
+description: "La arquitectura de software rara vez se diseña con información completa. El rol del arquitecto es tomar decisiones responsables que equilibren riesgo, evolución tecnológica y necesidades del negocio."
+
+summary: "La arquitectura no se diseña con información perfecta. Se diseña tomando decisiones responsables cuando el contexto aún es incompleto."
+
+weight: 2
+
+images:
+  - /images/og/arquitectura/og-decisiones-bajo-incertidumbre.jpg
+
+tags:
+  - arquitectura de software
+  - liderazgo técnico
+  - decisiones arquitectónicas
+  - estrategia tecnológica
+
 ---
 
 En teoría, las decisiones técnicas se toman con información suficiente.

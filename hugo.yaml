@@ -19,6 +19,7 @@ params:
   hideMeta: true
   mainSections:
     - arquitectura
+  author: "Mario César Lima Rodríguez"
   description: "Arquitecto de Software especializado en diseño de sistemas escalables y decisiones técnicas estratégicas."
 
 menu:

@@ -1,10 +1,24 @@
 ---
-title: "Diseñando sistemas que funcionan sin red: lecciones de arquitectura offline-first"
-summary: "Cuando la conectividad no está garantizada, la arquitectura no puede depender de ella. Diseñar offline-first es diseñar para resiliencia operativa."
 date: 2021-03-02
-weight: 5
-tags: ["arquitectura", "offline-first", "sistemas distribuidos", "resiliencia"]
 draft: false
+
+title: "Diseñando sistemas que funcionan sin red: lecciones de arquitectura offline-first"
+
+description: "Cuando la conectividad no está garantizada, los sistemas deben diseñarse para operar de forma autónoma. La arquitectura offline-first permite resiliencia operativa en entornos con conectividad intermitente o limitada."
+
+summary: "Cuando la conectividad no está garantizada, la arquitectura no puede depender de ella. Diseñar offline-first es diseñar para resiliencia operativa."
+
+weight: 5
+
+images:
+  - /images/og/arquitectura/og-sistemas-que-funcionan-sin-red.jpg
+
+tags:
+  - arquitectura de software
+  - offline-first
+  - sistemas distribuidos
+  - resiliencia operativa
+
 ---
 
 En muchos proyectos, la conectividad se asume como constante.

@@ -1,10 +1,24 @@
 ---
-title: "Trazabilidad como principio arquitectónico: diseñar sistemas que pueden explicarse"
-summary: "En entornos críticos, no basta con que el sistema funcione. Debe poder explicar cada decisión que ejecuta."
 date: 2020-03-01
-weight: 6
-tags: ["arquitectura", "trazabilidad", "sistemas críticos", "auditoría"]
 draft: false
+
+title: "Trazabilidad como principio arquitectónico: diseñar sistemas que pueden explicarse"
+
+description: "En sistemas críticos, no basta con que las operaciones funcionen. La arquitectura debe permitir rastrear, explicar y auditar cada decisión que el sistema ejecuta."
+
+summary: "En entornos críticos, no basta con que el sistema funcione. Debe poder explicar cada decisión que ejecuta."
+
+weight: 6
+
+images:
+  - /images/og/arquitectura/og-trazabilidad-principio-arquitectonico.jpg
+
+tags:
+  - arquitectura de software
+  - trazabilidad
+  - sistemas críticos
+  - auditoría de sistemas
+
 ---
 
 En muchos proyectos, el éxito se mide por funcionalidad entregada.
