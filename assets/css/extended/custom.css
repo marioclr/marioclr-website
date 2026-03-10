@@ -295,3 +295,51 @@ h2 {
 .footer a:hover {
     text-decoration: underline;
 }
+
+/* Línea editorial bajo títulos de sección */
+
+.post-content h2 {
+  position: relative;
+  padding-bottom: 0.35rem;
+}
+
+.post-content h2 {
+  margin-top: 3rem;
+}
+
+.post-content h2::after {
+  content: "";
+  display: block;
+  width: 42px;
+  height: 2px;
+  background: var(--primary);
+  margin-top: 0.35rem;
+}
+
+/* Mejora tipográfica global de títulos */
+
+h1, h2, h3 {
+  letter-spacing: -0.015em;
+}
+
+h1 {
+  font-weight: 750;
+}
+
+h2 {
+  font-weight: 680;
+}
+
+/* Mejora refinada del navbar */
+
+#menu {
+  gap: 1.2rem;
+}
+
+#menu a {
+  transition: opacity 0.15s ease;
+}
+
+#menu a:hover {
+  opacity: 0.7;
+}
