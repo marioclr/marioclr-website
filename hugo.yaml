@@ -31,13 +31,18 @@ menu:
 
     - identifier: projects
       name: Proyectos
-      url: /projects/
+      url: /proyectos/
       weight: 2
 
     - identifier: arquitectura
       name: Arquitectura
       url: /arquitectura/
       weight: 3
+
+    - identifier: desarrollo
+      name: Desarrollo
+      url: /desarrollo-profesional/
+      weight: 4
 
     - identifier: cv
       name: "CV"

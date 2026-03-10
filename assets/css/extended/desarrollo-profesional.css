@@ -1,0 +1,193 @@
+/* =========================================================
+   Layout y tipografía base
+========================================================= */
+
+.post-content {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 1.02rem;
+  line-height: 1.75;
+}
+
+.post-header {
+  max-width: 720px;
+  margin: 0 auto 2rem auto;
+}
+
+.post-content h2 {
+  margin-top: 3rem;
+  margin-bottom: 1.1rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.post-content h3 {
+  margin-top: 1.4rem;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+}
+
+.post-content p {
+  margin-bottom: 1.2rem;
+}
+
+.post-content ul {
+  margin-top: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.post-content li {
+  margin-bottom: 0.25rem;
+}
+
+/* Ocultar anchor links de PaperMod */
+
+.post-content h2 .anchor {
+  display: none;
+}
+
+
+/* =========================================================
+   Áreas de especialización
+========================================================= */
+
+.specialties {
+  margin-top: 1.4rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1rem;
+}
+
+.specialty {
+  display: inline-block;
+  padding: 0.5rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.2;
+  white-space: nowrap;
+  margin-bottom: 0.2rem;
+}
+
+.specialty:hover {
+  background: var(--primary);
+  color: var(--theme);
+}
+
+
+/* =========================================================
+   Principios de desarrollo profesional
+========================================================= */
+
+.principles-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.principle-card {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+  padding: 1.4rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.principle-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+}
+
+.principle-card h3 {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   Timeline profesional
+========================================================= */
+
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  margin-left: 0.2rem;
+  padding-left: 1.8rem;
+  border-left: 2px solid var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.2rem;
+  padding-left: 0.4rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 7px;
+  width: 10px;
+  height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  border: 2px solid var(--theme);
+}
+
+.timeline-item:hover::before {
+  transform: scale(1.15);
+}
+
+.timeline-year {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin-bottom: 0.3rem;
+  letter-spacing: 0.02em;
+}
+
+.timeline-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.timeline-content p {
+  margin-top: 0;
+}
+
+
+/* =========================================================
+   Formación académica
+========================================================= */
+
+.education-card {
+  margin-top: 1.2rem;
+  padding: 1.4rem;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--entry);
+}
+
+.education-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.4rem;
+}
+
+.education-card p {
+  margin-bottom: 0;
+}
+
+
+/* =========================================================
+   Separador editorial
+========================================================= */
+
+.section-divider {
+  margin: 3rem 0;
+  border: none;
+  border-top: 1px solid var(--border);
+  opacity: 0.6;
+}
