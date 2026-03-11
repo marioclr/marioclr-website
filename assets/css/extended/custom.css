@@ -1,6 +1,6 @@
-/* ================================================== */
-/* 🎨 VARIABLES BASE */
-/* ================================================== */
+/* ==================================================
+   🎨 VARIABLES BASE
+================================================== */
 
 :root {
   --theme: #e6d9c9;
@@ -15,9 +15,9 @@
   --brand-accent-hover: #2563eb;
 }
 
-/* ================================================== */
-/* 🌞 LIGHT THEME */
-/* ================================================== */
+/* ==================================================
+   🌞 LIGHT THEME
+================================================== */
 
 html[data-theme="light"] body,
 html[data-theme="light"] .list {
@@ -29,9 +29,9 @@ html[data-theme="light"] .list {
   );
 }
 
-/* ================================================== */
-/* 🌙 DARK THEME */
-/* ================================================== */
+/* ==================================================
+   🌙 DARK THEME
+================================================== */
 
 html[data-theme="dark"] {
   --theme: #0f1115;
@@ -51,9 +51,9 @@ html[data-theme="dark"] body {
   );
 }
 
-/* ================================================== */
-/* 🧭 HEADER */
-/* ================================================== */
+/* ==================================================
+   🧭 HEADER
+================================================== */
 
 .header {
   background: linear-gradient(
@@ -62,14 +62,14 @@ html[data-theme="dark"] body {
     #202124 40%,
     #2c2f33 100%
   );
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
   --primary: #ffffff;
 }
 
 .header a,
 .logo a {
   color: #f5f5f5;
-  transition: color 0.3s ease;
+  transition: color .3s ease;
 }
 
 .nav a:hover,
@@ -92,9 +92,9 @@ nav a.active::after {
   background: currentColor;
 }
 
-/* ================================================== */
-/* 📦 CONTENEDOR PRINCIPAL */
-/* ================================================== */
+/* ==================================================
+   📦 MAIN CONTAINER
+================================================== */
 
 .main {
   max-width: 820px;
@@ -104,400 +104,287 @@ nav a.active::after {
 }
 
 html[data-theme="light"] .main {
-  background: #ffffff;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  box-shadow: 0 12px 40px rgba(0,0,0,.06);
 }
 
 html[data-theme="dark"] .main {
   background: #141922;
-  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+  box-shadow: 0 12px 40px rgba(0,0,0,.55);
 }
 
-/* ================================================== */
-/* ✨ TIPOGRAFÍA */
-/* ================================================== */
-
-h1 {
-  font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 780;
-  letter-spacing: -0.8px;
-  line-height: 1.15;
-  margin-bottom: 0.75rem;
-}
-
-h1, h2, h3 {
-  letter-spacing: -0.5px;
-}
-
-h2 {
-  font-size: 1.8rem;
-}
-
-/* ================================================== */
-/* 👤 HERO SECTION (Proporción Matemática Final) */
-/* ================================================== */
-
-.hero-section {
-  margin: 1.8rem 0 2.8rem 0;
-  animation: heroFade 0.8s ease-out both;
-}
-
-/* H1 – Ancla visual */
-
-.hero-section h1 {
-  font-size: clamp(2.3rem, 5vw, 3.25rem);
-  font-weight: 780;
-  letter-spacing: -0.9px;
-  line-height: 1.12;
-  margin-bottom: 0.55rem;
-}
-
-/* Rol – Nivel secundario */
-
-.hero-role {
-  font-size: 1.28rem;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-  margin-bottom: 0.9rem;
-  color: var(--primary);
-}
-
-/* Descripción – Nivel terciario */
-
-.hero-description {
-  font-size: 1.08rem;
-  max-width: 650px;
-  color: var(--secondary);
-  line-height: 1.65;
-  margin-bottom: 0;
-}
-
-/* ================================================== */
-/* ✦ HERO DIVIDER (detalle editorial elegante) */
-/* ================================================== */
-
-.hero-section::after{
-content:"";
-display:block;
-
-width:90px;
-height:3px;
-
-margin:2rem auto 0 auto;
-
-background:linear-gradient(
-90deg,
-transparent,
-var(--primary),
-transparent
-);
-
-opacity:0.35;
-border-radius:2px;
-}
-
-/* ================================================== */
-/* 🔹 ABOUT SECTION (Balance Final) */
-/* ================================================== */
-
-.about-section{
-margin-top:2rem;
-max-width:720px;
-}
-
-.about-image img:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.22);
-}
-
-.about-content {
-  width: 100%;
-}
-
-/* 🔥 Lead text como antes (pero mejorado) */
-
-.about-content p:first-of-type {
-  font-size: 1.15rem;
-  font-weight: 600;
-  line-height: 1.6;
-  color: var(--primary);
-  margin-bottom: 1rem;
-}
-
-/* Párrafos normales */
-
-.about-content p {
-  line-height: 1.65;
-}
-
-/* Lista más elegante */
-
-.about-content ul {
-  margin-top: 1rem;
-}
-
-.about-content li {
-  margin-bottom: 0.7rem;
-}
-
-.about-content strong {
-  color: var(--primary);
-}
-
-/* ================================================== */
-/* 📱 MOBILE */
-/* ================================================== */
-
-@media (max-width: 768px) {
-
-  .main {
-    padding: 1.8rem;
-  }
-
-  .about-section {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-content {
-    max-width: 100%;
-  }
-
-  .hero-role {
-    font-size: 1.05rem;
-  }
-
-  .hero-description {
-    font-size: 0.95rem;
-  }
-
-}
-
-/* Footer refinement */
-
-.footer {
-    font-size: 0.9rem;
-    opacity: 0.75;
-    margin-top: 2rem;
-    letter-spacing: 0.02em;
-}
-
-.footer a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
-}
-
-/* Línea editorial bajo títulos de sección */
-
-.post-content h2 {
-  position: relative;
-  padding-bottom: 0.35rem;
-}
-
-.post-content h2 {
-  margin-top: 3rem;
-}
-
-.post-content h2::after {
-  content: "";
-  display: block;
-  width: 42px;
-  height: 2px;
-  background: var(--primary);
-  margin-top: 0.35rem;
-}
-
-/* Mejora tipográfica global de títulos */
-
-h1, h2, h3 {
-  letter-spacing: -0.015em;
-}
-
-h1 {
-  font-weight: 750;
-}
-
-h2 {
-  font-weight: 680;
-}
-
-/* Mejora refinada del navbar */
-
-#menu {
-  gap: 1.2rem;
-}
-
-#menu a {
-  transition: opacity 0.15s ease;
-}
-
-#menu a:hover {
-  opacity: 0.7;
-}
-
-.home-about{
-display:flex;
-gap:2rem;
-align-items:flex-start;
-margin-top:1.5rem;
-}
-
-.home-about-image img{
-width:140px;
-border-radius:10px;
-box-shadow:0 6px 18px rgba(0,0,0,0.08);
-}
-
-.home-about-text{
-flex:1;
-}
-
-@media (max-width:800px){
-.home-about{
-flex-direction:column;
-}
-}
-
-/* ================================================== */
-/* 👤 HERO IMAGE */
-/* ================================================== */
-
-.hero-image{
-margin-top:1.8rem;
-display:flex;
-justify-content:center;
-}
-
-.hero-image img{
-width:150px;
-border-radius:14px;
-box-shadow:0 10px 26px rgba(0,0,0,0.14);
-transition:transform .25s ease, box-shadow .25s ease;
-}
-
-.hero-image img:hover{
-transform:translateY(-2px);
-box-shadow:0 16px 34px rgba(0,0,0,0.18);
-}
-
-/* ================================================== */
-/* 📄 ABOUT SECTION (Contenido limpio) */
-/* ================================================== */
-
-.about-section{
-margin-top:2.2rem;
-}
-
-.about-content{
-max-width:620px;
-}
-
-/* Lead paragraph */
-
-.about-content p:first-of-type{
-font-size:1.15rem;
-font-weight:600;
-line-height:1.6;
-color:var(--primary);
-margin-bottom:1rem;
-}
-
-/* Lista */
-
-.about-content ul{
-margin-top:1rem;
-}
-
-.about-content li{
-margin-bottom:0.65rem;
-}
-
-.hero-specialties{
-margin-top:0.4rem;
-margin-bottom:1.6rem;
-
-font-size:0.95rem;
-letter-spacing:0.3px;
-
-color:var(--secondary);
-
-text-align:center;
-}
-
-.hero-role{
-font-size:1.15rem;
-font-weight:600;
-margin-bottom:0.35rem;
-text-align:center;
-}
-
-.hero-section h1{
-text-align:center;
-}
-
-.hero-description{
-text-align:center;
-margin-top:1.4rem;
-}
-
-/* ================================================== */
-/* 🏷 HERO SPECIALIZATION TAGS */
-/* ================================================== */
-
-.hero-tags{
-display:flex;
-justify-content:center;
-flex-wrap:wrap;
-gap:0.5rem;
-
-margin-top:0.6rem;
-margin-bottom:1.6rem;
-}
-
-.hero-tag{
-padding:0.35rem 0.75rem;
-
-font-size:0.8rem;
-letter-spacing:0.3px;
-
-border-radius:999px;
-
-background:var(--tertiary);
-color:var(--primary);
-
-opacity:0.85;
-}
-
-/* ================================================== */
-/* ✨ REFINAMIENTO TIPOGRÁFICO GLOBAL */
-/* ================================================== */
+/* ==================================================
+   ✨ GLOBAL TYPOGRAPHY
+================================================== */
 
 h1{
-font-weight:760;
-letter-spacing:-0.02em;
+  font-size: clamp(2.2rem,5vw,3.2rem);
+  font-weight:760;
+  letter-spacing:-0.02em;
+  line-height:1.15;
+  margin-bottom:.75rem;
 }
 
 h2{
-font-weight:680;
-letter-spacing:-0.015em;
-margin-top:2.6rem;
+  font-size:1.8rem;
+  font-weight:680;
+  letter-spacing:-0.015em;
+  margin-top:2.6rem;
 }
 
 h3{
-font-weight:640;
-letter-spacing:-0.01em;
+  font-weight:640;
+  letter-spacing:-0.01em;
 }
 
-.post-content,
+/* ==================================================
+   👤 HERO SECTION
+================================================== */
+
+.hero-section{
+  margin:1.8rem 0 2.8rem;
+  animation: heroFade .8s ease-out both;
+}
+
+.hero-section h1{
+  text-align:center;
+}
+
+.hero-role{
+  font-size:1.15rem;
+  font-weight:600;
+  margin-bottom:.35rem;
+  text-align:center;
+}
+
+.hero-description{
+  font-size:1.08rem;
+  max-width:650px;
+  margin:1.4rem auto 0;
+  text-align:center;
+  color:var(--secondary);
+  line-height:1.65;
+}
+
+.hero-tags{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:.5rem;
+  margin:.6rem 0 1.6rem;
+}
+
+.hero-tag{
+  padding:.35rem .75rem;
+  font-size:.8rem;
+  border-radius:999px;
+  background:var(--tertiary);
+  color:var(--primary);
+  opacity:.85;
+}
+
+/* Hero divider */
+
+.hero-section::after{
+  content:"";
+  display:block;
+  width:90px;
+  height:3px;
+  margin:2rem auto 0;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    var(--primary),
+    transparent
+  );
+  opacity:.35;
+  border-radius:2px;
+}
+
+/* ==================================================
+   👤 HERO IMAGE
+================================================== */
+
+.hero-image{
+  margin-top:1.8rem;
+  display:flex;
+  justify-content:center;
+}
+
+.hero-image img{
+  width:150px;
+  border-radius:14px;
+  box-shadow:0 10px 26px rgba(0,0,0,.14);
+  transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.hero-image img:hover{
+  transform:translateY(-2px);
+  box-shadow:0 16px 34px rgba(0,0,0,.18);
+}
+
+/* ==================================================
+   📄 ABOUT SECTION
+================================================== */
+
+.about-section{
+  margin-top:2.2rem;
+  max-width:720px;
+}
+
 .about-content{
-max-width:680px;
-line-height:1.68;
+  max-width:680px;
+  margin:auto;
+  line-height:1.68;
+}
+
+.about-content p:first-of-type{
+  font-size:1.15rem;
+  font-weight:600;
+  color:var(--primary);
+  margin-bottom:1rem;
+}
+
+.about-content p{
+  margin-bottom:1rem;
+  line-height:1.7;
+  color:var(--secondary);
+}
+
+.about-content strong{
+  color:var(--primary);
+}
+
+/* Lists */
+
+.about-content ul{
+  padding-left:1rem;
+  margin:.5rem 0 1.4rem;
+}
+
+.about-content li{
+  margin-bottom:.45rem;
+  line-height:1.6;
+}
+
+/* Divider */
+
+.about-content hr{
+  margin:2rem 0;
+  opacity:.15;
+}
+
+/* ==================================================
+   📄 POST CONTENT
+================================================== */
+
+.post-content{
+  max-width:720px;
+  margin:auto;
+  line-height:1.68;
 }
 
 .post-content p{
-margin-bottom:1rem;
+  margin-bottom:1rem;
+}
+
+/* Editorial links */
+
+.post-content a{
+  text-decoration:none;
+  border-bottom:1px solid var(--tertiary);
+  transition:border-color .18s ease;
+}
+
+.post-content a:hover{
+  border-color:var(--primary);
+}
+
+/* Section title underline */
+
+.post-content h2{
+  position:relative;
+  padding-bottom:.35rem;
+}
+
+.post-content h2::after{
+  content:"";
+  display:block;
+  width:42px;
+  height:2px;
+  background:var(--primary);
+  margin-top:.35rem;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+.footer{
+  font-size:.9rem;
+  opacity:.75;
+  margin-top:2rem;
+  letter-spacing:.02em;
+}
+
+.footer a{
+  color:inherit;
+  text-decoration:none;
+}
+
+.footer a:hover{
+  text-decoration:underline;
+}
+
+/* ==================================================
+   NAVBAR REFINEMENT
+================================================== */
+
+#menu{
+  gap:1.2rem;
+}
+
+#menu a{
+  transition:opacity .15s ease;
+}
+
+#menu a:hover{
+  opacity:.7;
+}
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media (max-width:768px){
+
+  .main{
+    padding:1.8rem;
+  }
+
+  .hero-role{
+    font-size:1.05rem;
+  }
+
+  .hero-description{
+    font-size:.95rem;
+  }
+
+}
+
+/* ==================================================
+   UX POLISH
+================================================== */
+
+html{
+  scroll-behavior:smooth;
+}
+
+.hero-specialties {
+    margin-top: .4rem;
+    margin-bottom: 1.6rem;
+    font-size: .95rem;
+    letter-spacing: .3px;
+    color: var(--secondary);
+    text-align: center;
 }
