@@ -275,6 +275,8 @@
   white-space: nowrap;
 
   transition: transform 0.12s ease, background 0.12s ease;
+
+  margin-bottom: 0.2rem;
 }
 
 .architecture-principle:hover {

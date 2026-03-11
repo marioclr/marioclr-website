@@ -3,14 +3,20 @@ title: "Sistema de Logística para Recolección en Alpura"
 subtitle: "Diseño metodológico de sistema nacional para planeación y optimización de rutas de recolección de leche"
 date: 2008-01-01
 summary: "Participación en el diseño y dirección metodológica del sistema nacional de planeación y ejecución de rutas de recolección de leche bajo marco RUP."
+impact: "Diseño metodológico del sistema nacional de planeación y optimización de rutas de recolección de leche para Alpura, mejorando eficiencia logística y control operativo."
 organization: "Qualitrain Express"
-role: "Consultor JR"
+role: "Consultor JR · Análisis y Diseño de Sistemas"
 period: "2005–2009"
 weight: 20
 tags: ["RUP", "Análisis y Diseño OO", "Logística", "Consultoría", "Modelado UML"]
 featured: false
 images:
   - /images/og/projects/og-logistica.jpg
+tech:
+  - RUP
+  - UML
+  - Análisis OO
+  - Diseño Orientado a Objetos
 ---
 
 ## Executive Summary

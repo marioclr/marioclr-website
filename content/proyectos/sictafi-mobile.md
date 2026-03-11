@@ -3,13 +3,20 @@ title: "SICTAFI Mobile"
 subtitle: "Sistema móvil para levantamiento georreferenciado de inventario público con sincronización segura a plataforma central"
 date: 2014-01-01
 summary: "Aplicación móvil Android para inventario y geolocalización de bienes públicos con sincronización segura hacia sistema central en ASP.NET."
+impact: "Implementación de sistema móvil georreferenciado para levantamiento de inventario público con arquitectura offline-first y sincronización segura hacia plataforma institucional central."
 organization: "Jibda & Asociados"
-role: "Lider técnico - Web & Mobile"
+role: "Líder Técnico · Plataforma Web & Mobile"
 period: "2016–2017"
 tags: ["Android", "Java", "ASP.NET", "SQL Server", "Arquitectura Distribuida"]
 featured: false
 images:
   - /images/og/projects/og-sictafi.jpg
+tech:
+  - Android
+  - Java
+  - ASP.NET
+  - SQL Server
+  - Sincronización Offline
 ---
 
 ## Executive Summary

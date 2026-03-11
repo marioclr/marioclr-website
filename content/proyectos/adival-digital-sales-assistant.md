@@ -5,15 +5,22 @@ date: 2009-01-01
 lastmod: 2009-08-01
 draft: false
 summary: "Solución móvil empresarial para digitalizar la fuerza de ventas con despliegue nacional."
+impact: "Digitalización nacional de la fuerza de ventas mediante plataforma móvil offline con sincronización hacia sistemas corporativos y backend legacy AS/400."
 tags: ["Mobile Enterprise", "Arquitectura", "Offline Sync", "Integración Legacy"]
 categories: ["Projects"]
 weight: 10
 organization: "Alpura"
-role: "Analista Programador"
+role: "Analista Programador · Plataforma Mobile Enterprise"
 period: "2005–2009"
 featured: false
 images:
   - /images/og/projects/og-adival.jpg
+tech:
+  - .NET Compact Framework
+  - C#
+  - SQL Server CE
+  - Windows Mobile
+  - Integración AS/400
 ---
 ## Executive Summary
 

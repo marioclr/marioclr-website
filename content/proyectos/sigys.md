@@ -3,7 +3,7 @@ title: "Sistema Integral de Guardias y Suplencias (SIGYS)"
 subtitle: "Modernización tecnológica nacional para gestión institucional de guardias y suplencias médicas"
 date: 2025-01-01
 period: "2025 – Actualidad"
-role: "Arquitecto de Solución y Líder del Proyecto"
+role: "Arquitecto de Solución · Liderazgo Técnico"
 industry: "Sector Público – Salud"
 organization: "ISSSTE"
 scope: "Nacional"
@@ -11,11 +11,22 @@ status: "En fase de implementación"
 featured: true
 summary: "Proyecto estratégico de modernización tecnológica para sustituir sistema legacy institucional y formalizar la gestión nacional de esquemas de guardias y suplencias médicas."
 description: "Modernización tecnológica nacional para sustituir sistema legacy crítico y formalizar digitalmente la gestión de guardias y suplencias médicas."
-impact: "Modernización de sistema nacional crítico con controles de seguridad y validación normativa integrados."
+impact: "Modernización de plataforma nacional crítica que gestiona guardias y suplencias médicas en el sector público, reemplazando sistema legacy institucional de más de 20 años."
+highlight: "Modernización de plataforma crítica de 20+ años · Implementación nacional · Arquitectura institucional segura"
 technologies: ["Spring Framework", "Angular", "REST API", "Informix", "Unix Servers"]
 tags: ["Arquitectura Empresarial", "Modernización Legacy", "Sector Público", "Gestión Nacional", "Spring", "Angular"]
 images:
   - /images/og/projects/og-sigys.jpg
+tech:
+  - Spring
+  - Angular
+  - REST APIs
+  - Informix
+  - Unix
+impact_points:
+  - Sistema nacional
+  - Arquitectura empresarial
+  - Modernización legacy
 ---
 
 ## Executive Summary
