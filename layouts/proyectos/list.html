@@ -2,6 +2,22 @@
 <main class="main">
   <header class="page-header">
     <h1>{{ .Title }}</h1>
+    <p class="portfolio-intro">
+      Una selección de proyectos representativos en arquitectura de software,
+      modernización tecnológica y liderazgo técnico en entornos empresariales
+      y sector público.
+    </p>
+    {{ with .Params.role }}
+    <p class="project-role">{{ . }}</p>
+    {{ end }}
+
+    {{ with .Params.tech }}
+    <div class="project-tech">
+      {{ range . }}
+        <span class="tech-tag">{{ . }}</span>
+      {{ end }}
+    </div>
+    {{ end }}
     {{ with .Content }}
       <div class="post-description">
         {{ . }}
@@ -41,16 +57,33 @@
           {{ with .Params.summary }}
             <p class="portfolio-summary">{{ . }}</p>
           {{ end }}
+          {{ with .Params.tech }}
+          <div class="project-tech">
+            {{ range . }}
+              <span class="tech-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
 
           <!-- NUEVO HIGHLIGHT -->
-          <p class="featured-highlight">
-            Modernización de plataforma crítica de 20+ años · Implementación nacional · Arquitectura institucional segura
-          </p>
-
+          {{ with .Params.highlight }}
+          <p class="featured-highlight">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.impact_points }}
+          <div class="featured-impact">
+            {{ range . }}
+              <div class="impact-point">{{ . }}</div>
+            {{ end }}
+          </div>
+          {{ end }}
         </article>
       </div>
     {{ end }}
   {{ end }}
+
+  <div class="portfolio-divider">
+    Otros proyectos
+  </div>
 
   <!-- Grid Projects -->
   <div class="portfolio-grid">
@@ -75,6 +108,18 @@
 
           {{ with .Params.summary }}
             <p class="portfolio-summary">{{ . }}</p>
+          {{ end }}
+          {{ with .Params.tech }}
+          <div class="project-tech">
+            {{ range . }}
+              <span class="tech-tag">{{ . }}</span>
+            {{ end }}
+          </div>
+          {{ end }}
+          {{ with .Params.impact }}
+          <p class="project-impact">
+            {{ . }}
+          </p>
           {{ end }}
         </article>
       {{ end }}

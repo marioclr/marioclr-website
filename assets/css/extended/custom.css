@@ -172,42 +172,37 @@ h2 {
   margin-bottom: 0;
 }
 
-/* Divider – Punto de cierre visual */
+/* ================================================== */
+/* ✦ HERO DIVIDER (detalle editorial elegante) */
+/* ================================================== */
 
-.hero-section::after {
-  content: "";
-  display: block;
-  margin: 2.2rem auto 0 auto;
-  height: 3px;
-  width: 95px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--primary),
-    transparent
-  );
-  opacity: 0.28;
-  border-radius: 3px;
+.hero-section::after{
+content:"";
+display:block;
+
+width:90px;
+height:3px;
+
+margin:2rem auto 0 auto;
+
+background:linear-gradient(
+90deg,
+transparent,
+var(--primary),
+transparent
+);
+
+opacity:0.35;
+border-radius:2px;
 }
 
 /* ================================================== */
 /* 🔹 ABOUT SECTION (Balance Final) */
 /* ================================================== */
 
-.about-section {
-  display: flex;
-  align-items: center;
-  gap: 3rem;
-  margin: 2.5rem 0 1rem 0;
-}
-
-/* Imagen vuelve a tamaño original pero más refinada */
-
-.about-image img {
-  width: 380px; /* tamaño original */
-  border-radius: 8px;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.about-section{
+margin-top:2rem;
+max-width:720px;
 }
 
 .about-image img:hover {
@@ -216,7 +211,7 @@ h2 {
 }
 
 .about-content {
-  max-width: 520px;
+  width: 100%;
 }
 
 /* 🔥 Lead text como antes (pero mejorado) */
@@ -342,4 +337,167 @@ h2 {
 
 #menu a:hover {
   opacity: 0.7;
+}
+
+.home-about{
+display:flex;
+gap:2rem;
+align-items:flex-start;
+margin-top:1.5rem;
+}
+
+.home-about-image img{
+width:140px;
+border-radius:10px;
+box-shadow:0 6px 18px rgba(0,0,0,0.08);
+}
+
+.home-about-text{
+flex:1;
+}
+
+@media (max-width:800px){
+.home-about{
+flex-direction:column;
+}
+}
+
+/* ================================================== */
+/* 👤 HERO IMAGE */
+/* ================================================== */
+
+.hero-image{
+margin-top:1.8rem;
+display:flex;
+justify-content:center;
+}
+
+.hero-image img{
+width:150px;
+border-radius:14px;
+box-shadow:0 10px 26px rgba(0,0,0,0.14);
+transition:transform .25s ease, box-shadow .25s ease;
+}
+
+.hero-image img:hover{
+transform:translateY(-2px);
+box-shadow:0 16px 34px rgba(0,0,0,0.18);
+}
+
+/* ================================================== */
+/* 📄 ABOUT SECTION (Contenido limpio) */
+/* ================================================== */
+
+.about-section{
+margin-top:2.2rem;
+}
+
+.about-content{
+max-width:620px;
+}
+
+/* Lead paragraph */
+
+.about-content p:first-of-type{
+font-size:1.15rem;
+font-weight:600;
+line-height:1.6;
+color:var(--primary);
+margin-bottom:1rem;
+}
+
+/* Lista */
+
+.about-content ul{
+margin-top:1rem;
+}
+
+.about-content li{
+margin-bottom:0.65rem;
+}
+
+.hero-specialties{
+margin-top:0.4rem;
+margin-bottom:1.6rem;
+
+font-size:0.95rem;
+letter-spacing:0.3px;
+
+color:var(--secondary);
+
+text-align:center;
+}
+
+.hero-role{
+font-size:1.15rem;
+font-weight:600;
+margin-bottom:0.35rem;
+text-align:center;
+}
+
+.hero-section h1{
+text-align:center;
+}
+
+.hero-description{
+text-align:center;
+margin-top:1.4rem;
+}
+
+/* ================================================== */
+/* 🏷 HERO SPECIALIZATION TAGS */
+/* ================================================== */
+
+.hero-tags{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:0.5rem;
+
+margin-top:0.6rem;
+margin-bottom:1.6rem;
+}
+
+.hero-tag{
+padding:0.35rem 0.75rem;
+
+font-size:0.8rem;
+letter-spacing:0.3px;
+
+border-radius:999px;
+
+background:var(--tertiary);
+color:var(--primary);
+
+opacity:0.85;
+}
+
+/* ================================================== */
+/* ✨ REFINAMIENTO TIPOGRÁFICO GLOBAL */
+/* ================================================== */
+
+h1{
+font-weight:760;
+letter-spacing:-0.02em;
+}
+
+h2{
+font-weight:680;
+letter-spacing:-0.015em;
+margin-top:2.6rem;
+}
+
+h3{
+font-weight:640;
+letter-spacing:-0.01em;
+}
+
+.post-content,
+.about-content{
+max-width:680px;
+line-height:1.68;
+}
+
+.post-content p{
+margin-bottom:1rem;
 }

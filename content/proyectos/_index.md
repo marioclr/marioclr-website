@@ -17,5 +17,3 @@ keywords:
   - modernización de sistemas
   - software architecture portfolio
 ---
-
-Algunos proyectos relevantes en los que he trabajado.

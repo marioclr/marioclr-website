@@ -1,10 +1,29 @@
 {{ define "main" }}
 
 <section class="hero-section">
+
   <h1>{{ .Title }}</h1>
 
   {{ with .Params.hero_role }}
-    <p class="hero-role"><strong>{{ . }}</strong></p>
+    <p class="hero-role">{{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.hero_specialties }}
+    <p class="hero-specialties">{{ . }}</p>
+  {{ end }}
+
+  {{ with .Params.hero_tags }}
+  <div class="hero-tags">
+    {{ range . }}
+      <span class="hero-tag">{{ . }}</span>
+    {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with .Params.hero_image }}
+  <figure class="hero-image">
+    <img src="{{ . }}" alt="Retrato profesional">
+  </figure>
   {{ end }}
 
   {{ with .Params.hero_description }}
@@ -12,15 +31,10 @@
       {{ . }}
     </p>
   {{ end }}
+
 </section>
 
 <section class="about-section">
-
-  <figure class="about-image">
-    {{ with .Params.hero_image }}
-      <img src="{{ . }}" alt="Retrato profesional">
-    {{ end }}
-  </figure>
 
   <div class="about-content">
     {{ .Content }}

@@ -191,3 +191,66 @@
   border-top: 1px solid var(--border);
   opacity: 0.6;
 }
+
+/* ================================
+   Mobile layout
+================================ */
+
+@media (max-width: 640px) {
+
+  .principles-grid{
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.principle-card h3{
+  word-break: normal;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 640px) {
+
+  .principle-card h3{
+    font-size: 1.35rem;
+    line-height: 1.25;
+  }
+
+}
+
+.principle-card{
+  padding: 1.4rem;
+}
+
+/* ======================================
+   Principle Icons
+====================================== */
+
+.principle-card h3{
+display:flex;
+align-items:center;
+gap:.45rem;
+}
+
+/* iconos */
+
+.principle-card:nth-child(1) h3::before{
+content:"📚";
+}
+
+.principle-card:nth-child(2) h3::before{
+content:"🧠";
+}
+
+.principle-card:nth-child(3) h3::before{
+content:"📈";
+}
+
+.principle-card:nth-child(4) h3::before{
+content:"🧭";
+}
+
+.principle-card h3::before{
+font-size:1.05rem;
+opacity:.85;
+}

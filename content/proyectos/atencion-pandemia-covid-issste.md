@@ -3,14 +3,20 @@ title: "Atención a la pandemia por COVID-19 en el ISSSTE"
 subtitle: "Adecuaciones críticas a sistema institucional de nómina para habilitar contratación extraordinaria durante la emergencia sanitaria"
 date: 2020-01-01
 summary: "Adecuaciones críticas al sistema SIAPISSSTE para habilitar contratación, cálculo y fiscalización del Personal COVID durante la emergencia sanitaria."
+impact: "Adecuación crítica de sistema institucional de nómina para habilitar contratación extraordinaria de personal médico durante la emergencia COVID-19, manteniendo integridad operativa y trazabilidad para auditorías."
 period: "2020 – 2021"
-role: "Jefe de Departamento"
+role: "Jefe de Departamento · Sistemas de Nómina"
 industry: "Sector Público – Salud"
 organization: "ISSSTE"
 tags: ["Sistema Legacy", "Nómina", "Sector Público", "Gestión de Datos", "Auditoría"]
 featured: false
 images:
   - /images/og/projects/og-covid.jpg
+tech:
+  - Sistema Legacy
+  - Nómina Institucional
+  - Procesos Masivos
+  - Auditoría de Datos
 ---
 
 ## Executive Summary

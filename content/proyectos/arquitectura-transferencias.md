@@ -4,13 +4,19 @@ draft: false
 title: 'App para Transferencias bancarias'
 subtitle: "Diseño arquitectónico de plataforma financiera basada en APIs para operaciones de transferencias digitales"
 organization: "Proyecto conceptual"
-role: "Arquitecto de Software"
+role: "Arquitecto de Software · Diseño de Plataforma"
 period: "2026 – Actualidad"
 summary: "Diseño arquitectónico de plataforma de transferencias bancarias basada en API Spring y Frontend Angular, con integración a core bancario mediante servicios de terceros."
+impact: "Diseño arquitectónico de plataforma de transferencias digitales basada en APIs, preparada para integración con core bancario y evolución hacia arquitectura distribuida."
 tags: ["Spring Boot", "Angular", "Arquitectura de Software", "APIs", "Integración Financiera"]
 featured: false
 images:
   - /images/og/projects/og-transferencias.jpg
+tech:
+  - Spring Boot
+  - Angular
+  - REST APIs
+  - Integración Core Bancario
 ---
 
 ## Executive Summary
