@@ -9,17 +9,69 @@
   {{ end }}
 </header>
 
-{{ $pages := where .Site.RegularPages "Section" "arquitectura" }}
+{{ if .Content }}
+<div class="post-content">
+  {{ .Content }}
+</div>
+{{ end }}
 
-{{ range $pages.ByDate.Reverse }}
-  <article class="architecture-entry">
-    <a href="{{ .RelPermalink }}" class="architecture-link">
-      <h2>{{ .Title }}</h2>
-      {{ with .Params.summary }}
-        <p class="architecture-summary">{{ . }}</p>
-      {{ end }}
-    </a>
-  </article>
+{{ $pages := where .Site.RegularPages "Section" "arquitectura" }}
+{{ $sorted := $pages.ByDate.Reverse }}
+
+{{ $featured := first 1 $sorted }}
+{{ $rest := after 1 $sorted }}
+
+
+<!-- ===================================================== -->
+<!-- Ensayo destacado -->
+<!-- ===================================================== -->
+
+{{ range $featured }}
+
+<article class="architecture-featured">
+
+  <div class="architecture-featured-label">
+    Ensayo destacado
+  </div>
+
+  <a href="{{ .RelPermalink }}" class="architecture-featured-link">
+    <h2>{{ .Title }}</h2>
+
+    {{ with .Params.summary }}
+      <p class="architecture-summary">{{ . }}</p>
+    {{ end }}
+  </a>
+
+</article>
+
+{{ end }}
+
+
+<!-- ===================================================== -->
+<!-- Lista de ensayos -->
+<!-- ===================================================== -->
+
+<div class="architecture-label">
+  Ensayos de arquitectura
+</div>
+
+{{ range $rest }}
+
+<article class="architecture-entry">
+  <a href="{{ .RelPermalink }}" class="architecture-link">
+
+    <h2>{{ .Title }}</h2>
+    <div class="architecture-meta">
+      {{ .ReadingTime }} min de lectura
+    </div>
+
+    {{ with .Params.summary }}
+      <p class="architecture-summary">{{ . }}</p>
+    {{ end }}
+
+  </a>
+</article>
+
 {{ end }}
 
 {{ end }}

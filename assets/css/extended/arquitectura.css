@@ -1,59 +1,11 @@
-/* ============================= */
-/* 🏛 Arquitectura – Identidad Editorial */
-/* ============================= */
+/* =========================================================
+   Arquitectura – Identidad Editorial
+========================================================= */
 
-.architecture-entry {
-  padding: 2rem 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  transition: all 0.2s ease;
-}
 
-.architecture-entry:last-child {
-  border-bottom: none;
-}
-
-.architecture-link {
-  text-decoration: none;
-  color: inherit;
-  display: block;
-}
-
-.architecture-entry h2 {
-  font-size: 1.4rem;
-  font-weight: 600;
-  margin: 0 0 0.6rem 0;
-  letter-spacing: -0.3px;
-}
-
-.architecture-entry:hover h2 {
-  opacity: 0.7;
-}
-
-.architecture-summary {
-  margin: 0;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.75;
-}
-
-/* Divider elegante para artículos */
-
-.architecture-divider {
-  width: 120px;              /* más larga */
-  height: 4px;
-  background: linear-gradient(to right, #222, rgba(0,0,0,0.2));
-  margin: 1.4rem 0 2.2rem 0; /* un poco más de aire */
-}
-
-/* Light mode */
-[data-theme="light"] .architecture-divider {
-  background: linear-gradient(to right, #222, rgba(0,0,0,0.15));
-}
-
-/* Dark mode */
-[data-theme="dark"] .architecture-divider {
-  background: linear-gradient(to right, #ffffff, rgba(255,255,255,0.35));
-}
+/* =========================================================
+   Encabezado de página
+========================================================= */
 
 .post-single h1 {
   font-size: 2.2rem;
@@ -61,6 +13,272 @@
   letter-spacing: -0.5px;
 }
 
+
+/* =========================================================
+   Divider editorial
+========================================================= */
+
+.architecture-divider {
+  width: 120px;
+  height: 4px;
+  margin: 1.4rem 0 2.2rem 0;
+  background: linear-gradient(to right, #222, rgba(0,0,0,0.2));
+}
+
+[data-theme="light"] .architecture-divider {
+  background: linear-gradient(to right, #222, rgba(0,0,0,0.15));
+}
+
+[data-theme="dark"] .architecture-divider {
+  background: linear-gradient(to right, #ffffff, rgba(255,255,255,0.35));
+}
+
+
+/* =========================================================
+   Introducción de la sección
+========================================================= */
+
+.post-content {
+  margin-bottom: 2rem;
+}
+
 .post-content h2 {
   margin-top: 2.5rem;
+}
+
+
+/* =========================================================
+   Label editorial
+========================================================= */
+
+.architecture-label {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   Ensayo destacado
+========================================================= */
+
+.architecture-featured {
+  padding: 2rem 0 1.8rem 0;
+  margin-bottom: 1.2rem;
+}
+
+.architecture-featured h2 {
+  font-size: 1.45rem;
+  line-height: 1.35;
+  margin-bottom: 0.4rem;
+}
+
+.architecture-featured-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.architecture-featured-link:hover {
+  opacity: 0.9;
+}
+
+.architecture-featured-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 0.6rem;
+}
+
+
+/* =========================================================
+   Lista de ensayos
+========================================================= */
+
+.architecture-entry {
+  position: relative;
+  padding: 1.6rem 0 1.6rem 1.4rem;
+}
+
+/* línea editorial vertical */
+
+.architecture-entry::before {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 1px;
+
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--border),
+    transparent
+  );
+}
+
+/* separador inferior */
+
+.architecture-entry::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--border),
+    transparent
+  );
+}
+
+.architecture-entry:last-child::after {
+  display: none;
+}
+
+
+/* =========================================================
+   Link de ensayo
+========================================================= */
+
+.architecture-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.architecture-link:hover {
+  transform: translateX(4px);
+  opacity: 0.9;
+}
+
+
+/* =========================================================
+   Títulos de ensayos
+========================================================= */
+
+.architecture-entry h2 {
+  position: relative;
+  display: inline-block;
+
+  padding-left: 1rem;
+
+  font-size: 1.28rem;
+  font-weight: 600;
+  line-height: 1.42;
+
+  margin-bottom: 0.3rem;
+  letter-spacing: -0.2px;
+}
+
+/* barra editorial */
+
+.architecture-entry h2::before {
+  content: "";
+  position: absolute;
+
+  left: -1rem;
+  top: 0.4rem;
+
+  width: 4px;
+  height: 14px;
+
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* línea hover */
+
+.architecture-entry h2::after {
+  content: "";
+  position: absolute;
+
+  left: 0;
+  bottom: -3px;
+
+  width: 0%;
+  height: 1px;
+
+  background: var(--primary);
+  transition: width 0.18s ease;
+}
+
+.architecture-link:hover h2::after {
+  width: 100%;
+}
+
+
+/* =========================================================
+   Meta de ensayo (tiempo de lectura)
+========================================================= */
+
+.architecture-meta {
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--secondary);
+
+  margin-top: 0.2rem;
+  margin-bottom: 0.35rem;
+}
+
+
+/* =========================================================
+   Resumen de ensayo
+========================================================= */
+
+.architecture-summary {
+  margin-top: 0.3rem;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--secondary);
+}
+
+
+/* =========================================================
+   Principios de arquitectura
+========================================================= */
+
+.architecture-principles {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 0.9rem 1rem;
+}
+
+.architecture-principle {
+  display: inline-block;
+
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+
+  background: var(--entry);
+
+  font-size: 0.85rem;
+  font-weight: 500;
+
+  white-space: nowrap;
+
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+.architecture-principle:hover {
+  transform: translateY(-1px);
+  background: var(--primary);
+  color: var(--theme);
 }
